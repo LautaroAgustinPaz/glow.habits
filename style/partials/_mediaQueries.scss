@@ -1,0 +1,43 @@
+// Grandes escritorios y monitores (BP - Basico)
+@mixin pc-1328px {
+    @media screen and (max-width: 1328px) {
+        @content;     
+    }
+}
+
+// Tablets (BP - Basico)
+@mixin tablets-960px {
+    @media screen and (max-width: 960px) {
+        @content;     
+    }
+}
+
+// Tablets (BP - Personalizado Personal)
+@mixin tablets-900px {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+// Tablets (BP - Personalizado)
+@mixin tablets-768px {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+// Celulares (BP - Basico)
+@mixin celulares-480px {
+    @media screen and (max-width: 960px) {
+        @content;     
+    }
+}
+
+// Celulares (BP - Personalizado)
+@mixin celulares-320px {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+
