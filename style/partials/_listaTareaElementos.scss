@@ -8,7 +8,7 @@
 // seccion de Color Mode - MiniNavbar y Fecha
 .ux {
     .color-mode {
-        background-color: #70FFA9;
+        background-color: #FD5503;
         min-width: 75px;
         min-height: 70px;
     }
@@ -25,13 +25,12 @@
 
 
         color: #ffffff;
-        font-size: 8px;
+        font-size: 6px;
+        font-family: "Krona One", sans-serif;
     }
 
     .miniNavbar {
-
         margin-right: 30px;
-
 
         grid-column: 2/3;
         grid-row: 1/2;
@@ -42,20 +41,23 @@
         justify-content: flex-end;
 
         button {
-            font-size: 8px;
-            font-weight: 200;
             padding: 9px;
             background-color: #353535;
-            color: #70FFA9;
+            color: #ffffff;
             border: none;
+
+            font-size: 8px;
+            font-weight: 200;
+            font-family: "Krona One", sans-serif;
 
             margin: 1px;
             padding-right: 20px;
             padding-left: 20px;
+            
         }
 
         .btns:hover {
-            color: #A29EFE;
+            color: #9EA6EC;
         }
 
         .btn-tareas {
@@ -83,6 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Krona One", sans-serif;
 
     .seccion-tarea > ul p {
         font-size: 1.2rem;

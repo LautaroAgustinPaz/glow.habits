@@ -2,19 +2,21 @@
 
 .agregarTareas-card {
     background: #000000;
-    border-radius: 1px 30px 1px 30px;
+    border-radius: 0px 30px 0px 30px;
     color: white;
 
-    padding: 1.5rem;
-    margin: 15px 20px 15px 20px;
+    padding: 20px 20px 15px 20px;
+    margin: 15px 21px 5px 21px;
 
-    min-height: 260px;
+    min-height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    
     .titulo {
         font-size: 36px;
+        letter-spacing: 1px;
+        font-family: "Krona one", sans-serif;
     }
 
     /* Input y button "+" */
@@ -30,6 +32,7 @@
             outline: none;
             transition: .3s;
             font-size: 10px;
+            font-family: "Krona One", sans-serif;
         }
         
         .agregar-tarea-input::placeholder  {
@@ -39,7 +42,7 @@
         .agregar-tarea-submit {
             padding: 0 3rem;
             border: 0;
-            background-color: #70FFA9;
+            background-color: #FD5503;
             color: rgb(56, 56, 56);
             border-radius: 0px 5px 5px 0px;
             font-size: 30px;
@@ -52,33 +55,76 @@
         
         .agregar-tarea-submit:hover {
             background-color: rgb(53, 49, 49);
-            color: #70FFA9;
+            color: #FD5503;
         }
     }
 }
 
 /* ------------------------------------------------------------------------------------->      CARD 2       */
 
-.progreso-card {
-    background: #A29EFE;
+.resumen-t-card {
+    min-height: 75%;
+    background-image: linear-gradient(#000000,#3949D9);
     border-radius: 30px;
-
-    padding: 1.5rem;;
-    margin: 15px 20px 15px 20px;
-
-    min-height: 260px;
-    display: flex;
-    justify-content: space-between;
+    margin: 15px 21px 15px 21px;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.40fr 1fr;
 
     
-    .diaCompletado {
+    .resumenDeT-txt {
+        color: white;
         display: flex;
         flex-direction: column;
+        padding: 17px 20px 0px 22px;
 
-        font-size: 10px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-family: "Krona one", sans-serif;
+        grid-column: 1/2;
+        grid-row: 1/1;
     }
 
-    .porcentaje {
-        font-size: 30px;
+    .tareas-cp {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        display: flex;
+        padding: 0px 12px 10px 12px;
+        grid-column: 1/1;
+        grid-row: 2/3;
+
+        .tarea-c {
+            font-family: "Goldman", sans-serif;
+            background-image: linear-gradient(#3949D9, #FFFFFF);
+            border-radius: 10px 10px 10px 25px;
+            width: 100%;
+            margin-right: 6px;
+
+            .tarea-c, h2 {
+                padding-top: 15px;
+                font-size: 100px;
+            }
+            .tarea-c, h3 {
+                font-size: 11px;
+            }
+        }
+
+        .tarea-p {
+            font-family: "Goldman", sans-serif;
+            background-image: linear-gradient(#3949D9, #FFFFFF);;
+            border-radius: 10px 10px 25px 10px;
+            width: 100%;
+            margin-left: 6px;
+
+            .tarea-p, h2 {
+                padding-top: 15px;
+                font-size: 100px;
+                
+            }
+            .tarea-p, h3 {
+                font-size: 11px;
+            }
+        }
     }
 }
