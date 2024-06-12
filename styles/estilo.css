@@ -156,7 +156,7 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .resumen-t-card .tareas-cp .tarea-c .tarea-c, .resumen-t-card .tareas-cp .tarea-c h3 {
   font-size: 11px;
@@ -174,7 +174,7 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .resumen-t-card .tareas-cp .tarea-p .tarea-p, .resumen-t-card .tareas-cp .tarea-p h3 {
   font-size: 11px;
